@@ -1,0 +1,81 @@
+html, body {
+    margin-left : 20px;margin-right : 20px;
+    padding: 0;
+    height: 100;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    border-radius: 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    
+}
+.header {
+    display: flex;
+    align-items: left;
+    width: 100%;
+    margin-left : 20px;margin-right : 20px;
+    padding: 1px ;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 2px solid black; /* Adiciona uma borda inferior preta */
+}
+.content {
+    max-width: 1440px;
+    margin: auto;
+    grid-gap: 3rem;
+    display: grid;
+    gap: 3rem;
+    grid-template-areas: "sidebar main anchors";
+    grid-template-columns: minmax(0,15rem) minmax(0,2.5fr) minmax(0,15rem);
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    align-items: flex-start; /* Alinha o texto para cima */
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+.sidebar {
+    display: flex;
+    
+    align-items: center;
+    text-align: center;
+    width: auto;
+    padding: 20px 0;
+    margin-left: 10px;
+    background-color: rgb(255, 255, 255);
+    border-right: solid 2px #cdcdcd;
+    
+}
+.main {
+flex-direction: column; /* Corrected invalid value 'linear' */
+display: flex;
+padding: 20px 20;
+margin-left: 10px;
+background-color: rgb(255, 255, 255);
+width: 100%; /* Added missing semicolon */
+
+}
+.image {
+    float: right; /* Faz a imagem flutuar à direita */
+    margin: 0 0 10px 10px; /* Adiciona espaçamento ao redor da imagem */
+    width: 30%; /* Define a largura da imagem */
+    text-align: left;
+    border: 2px solid black; /* Adiciona uma borda fina preta */
+   
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    border-top: solid 1px #cdcdcd;
+    width: 100%;
+}
+.anchors {
+    background-color: rgb(255, 255, 255);
+    padding-left: 15px;
+    height: max-content;
+    border-left: solid 1px #cdcdcd;
+}
